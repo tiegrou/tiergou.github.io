@@ -1,4 +1,4 @@
-var vertex = `
+var vertex = 
 		attribute vec2 uv;
 		attribute vec2 position;
 		varying vec2 vUv;
@@ -6,8 +6,8 @@ var vertex = `
 				vUv = uv;
 				gl_Position = vec4(position, 0, 1);
 		}
-`;
-var fragment = `
+;
+var fragment = 
 		precision highp float;
 		precision highp int;
 		uniform sampler2D tWater;
@@ -45,7 +45,7 @@ var fragment = `
 
 			gl_FragColor = vec4(tex.r, tex2.g, tex3.b, 1.0);
 		}
-`;
+;
 {
 	var _size = [2048, 1638];
 	var renderer = new ogl.Renderer({ dpr: 2 });
